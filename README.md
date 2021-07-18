@@ -1,6 +1,6 @@
 # CodePen - HTML/CSS and JavaScript
 
-This is the main repository for all the projects in CodePen.
+This is the main repository for all the projects CodePen.
 
 - [CodePen](https://codepen.io/fireblader/)
 
