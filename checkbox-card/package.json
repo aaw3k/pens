@@ -1,0 +1,14 @@
+{
+  "name": "checkbox-card",
+  "version": "0.0.0",
+  "main": "src/index.pug",
+  "scripts": {
+    "dev": "parcel src/index.pug --open -d public --port 2002 --no-cache"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+	"pug": "^3.0.0",
+    "sass": "^1.27.0"
+  }
+}

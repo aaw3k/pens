@@ -1,0 +1,74 @@
+-
+  const data = [
+    {
+      title: 'Category A',
+      description: 'Motorcycles',
+      image: './img/category-a.png',
+      checked: false,
+      disabled: false
+    },
+    {
+      title: 'Category B',
+      description: 'Cars and ATVs',
+      image: './img/category-b.png',
+      checked: false,
+      disabled: fasle
+    },
+    {
+      title: 'Category C',
+      description: 'Large goods vehicle',
+      image: './img/category-c.png',
+      checked: false,
+      disabled: false
+    },
+    {
+      title: 'Category D',
+      description: 'Buses',
+      image: './img/category-d.png',
+      checked: false,
+      disabled: false
+    },
+    {
+      title: 'Category T',
+      description: 'Tractors and SMVs',
+      image: './img/category-t.png',
+      checked: false,
+      disabled: false
+    },
+    {
+      title: 'Other',
+      description: 'Additional categories',
+      image: './img/other.png',
+      checked: false,
+      disabled: true
+    }
+  ]
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Category
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700&amp;display=swap")
+    link(rel="stylesheet" href="./style.scss")
+    script(src="./app.js")
+  body
+    .grid
+      each d in data
+        label.card
+          input.card__input(
+            type='checkbox'
+            checked=d.checked
+            disabled=d.disabled
+          )
+          .card__body
+            .card__body-cover
+              img.card__body-cover-image(src=d.image)
+              span.card__body-cover-chackbox
+                svg.card__body-cover-chackbox--svg(viewBox='0 0 12 10')
+                  polyline(points='1.5 6 4.5 9 10.5 1')
+            header.card__body-header
+              h2.card__body-header-title=d.title
+              p.card__body-header-subtitle=d.description

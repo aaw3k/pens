@@ -1,0 +1,13 @@
+{
+  "name": "article-like",
+  "version": "0.0.0",
+  "main": "src/index.html",
+  "scripts": {
+    "dev": "parcel src/index.html --open -d public --port 2002 --no-cache"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.27.0"
+  }
+}

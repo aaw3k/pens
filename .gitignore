@@ -1,0 +1,11 @@
+**/node_modules/
+**/public/
+**/.vscode/
+.DS_Store
+.gitignore
+yarn.lock
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
