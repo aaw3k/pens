@@ -1,14 +1,18 @@
 {
   "name": "checkbox-card",
-  "version": "0.0.0",
-  "main": "src/index.pug",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "source": "src/index.pug",
   "scripts": {
-    "dev": "parcel src/index.pug --open -d public --port 2002 --no-cache"
+    "start": "parcel src/index.pug",
+    "dev": "parcel src/index.pug --open --dist-dir dev --no-cache --lazy",
+    "build": "parcel build src/index.pug --dist-dir www"
   },
   "license": "ISC",
   "devDependencies": {
-    "parcel-bundler": "^1.12.4",
-	"pug": "^3.0.0",
-    "sass": "^1.27.0"
+    "@parcel/transformer-pug": "^2.2.1",
+    "@parcel/transformer-sass": "^2.2.1",
+    "parcel": "^2.2.1",
+    "pug": "^3.0.2",
+    "sass": "^1.49.0"
   }
 }

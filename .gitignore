@@ -1,5 +1,7 @@
 **/node_modules/
-**/public/
+**/.parcel-cache/
+**/dev/
+**/www/
 **/.vscode/
 .DS_Store
 .gitignore
