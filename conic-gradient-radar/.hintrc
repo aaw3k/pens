@@ -1,0 +1,29 @@
+{
+  "extends": ["development"],
+  "hints": {
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": ["meta[name=theme-color]"]
+      }
+    ],
+    "no-inline-styles": "off",
+    "typescript-config/consistent-casing": "off",
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": ["@layer", "-webkit-text-size-adjust"]
+      }
+    ]
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not and_chr <= 108",
+    "not chrome <= 108",
+    "not edge <= 108",
+    "not ios_saf <= 14.8",
+    "not opera <= 92",
+    "not samsung <= 19"
+  ]
+}

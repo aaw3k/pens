@@ -1,0 +1,32 @@
+{
+  "name": "conic-gradient-radar",
+  "author": "Sławek Jaskulski",
+  "private": true,
+  "version": "0.0.0",
+  "browserslist": [
+    "defaults"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "format": "prettier --write \"client/**/*.{css,html,ts}\"",
+    "lint": "rome check client"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.6",
+    "prettier": "^2.8.4",
+    "rome": "^11.0.0",
+    "sass": "^1.58.3",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.4",
+    "vite-plugin-pug": "^0.3.2"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "semi": false,
+    "trailingComma": "all",
+    "singleQuote": true,
+    "printWidth": 120
+  }
+}
